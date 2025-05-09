@@ -7,19 +7,17 @@ console.log(undefined == NaN);// false
 console.log(undefined == null); // true
 */
 
-let strArr='';
-let longRangeStringConToArray= (str)=>{
-    if(str.trim().length===0){
-        return false;
+let strArr = "";
+let longRangeStringConToArray = (str) => {
+  if (str.trim().length === 0) {
+    return false;
+  }
+  strArr = str.split(" ");
+  console.log(strArr);
+};
 
-    }
-    strArr= str.split(" ");
-    console.log(strArr);
-    
- 
-}
+console.log(
+  longRangeStringConToArray("Gopi nath usgh rani reddy my baby and myfather")
+);
 
-console.log(longRangeStringConToArray("Gopi nath usgh rani reddy my baby and myfather"));
-
-
-
+console.log("GIt Repositry");
